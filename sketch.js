@@ -6,7 +6,7 @@ const Bodies = Matter.Bodies;
 var particles = [];
 var plinkos = [];
 var divisions=[];
-var particle;
+var particle=0;
 var gameState="start";
 var turn=0;
 var divisionHeight=300;
@@ -95,7 +95,7 @@ function draw() {
   
    
    
-   if(particle!==null && particle!==undefined){
+   if( particle!==undefined){
      particle.display();
      if(particle.body.position.y>760){
        if(particle.body.position.x<300){
@@ -106,7 +106,7 @@ function draw() {
        }
      }
    }
-   if(particle!==null && particle!==undefined){
+   if( particle!==undefined){
     particle.display();
     if(particle.body.position.y>760){
       if(particle.body.position.x<450){
@@ -118,7 +118,7 @@ function draw() {
     }
   }
 
-  if(particle!==null && particle!==undefined){
+  if( particle!==undefined){
     particle.display();
     if(particle.body.position.y>760){
       if(particle.body.position.x>450){
